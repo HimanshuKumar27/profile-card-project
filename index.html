@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Flip Card</title>
-    <link href="./dist/output.css" rel="stylesheet" />
+    <link href="output.css" rel="stylesheet" />
     <style>
       .backface-hidden {
         backface-visibility: hidden;
@@ -20,7 +20,9 @@
   </head>
   <body class="relative bg-gray-100">
     <!-- Flip Card (perfect center) -->
-    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 group [perspective:1000px] w-[400px] h-96">
+    <div
+      class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 group [perspective:1000px] w-[400px] h-96"
+    >
       <div
         class="relative w-full h-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]"
       >
@@ -73,11 +75,12 @@
       </div>
     </div>
 
-    <footer class="absolute bottom-0 w-full bg-gray-200 text-center py-3 text-sm">
+    <footer
+      class="absolute bottom-0 w-full bg-gray-200 text-center py-3 text-sm"
+    >
       <p>Made with ❤️ by Great Himanshu</p>
     </footer>
   </body>
 </html>
-
 
 <!-- npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch -->
